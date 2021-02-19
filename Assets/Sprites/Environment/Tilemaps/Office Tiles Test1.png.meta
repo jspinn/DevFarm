@@ -1,31 +1,49 @@
 fileFormatVersion: 2
-guid: 3d6dbf4e77a18214f914f1474f44f73b
+guid: 29b80565bc66a794494cafc9d1ee3026
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6017649964607311941
-    second: pig_side_idle_anim_0
+      213: -1793292657935879536
+    second: Office Tiles Test1_0
   - first:
-      213: 4742930668617983304
-    second: pig_side_idle_anim_1
+      213: 7616602612815902047
+    second: Office Tiles Test1_1
   - first:
-      213: 4535578768271244748
-    second: pig_side_idle_anim_2
+      213: -3307942232908489171
+    second: Office Tiles Test1_2
   - first:
-      213: -6349291415313672901
-    second: pig_side_idle_anim_3
+      213: -4676248354241932744
+    second: Office Tiles Test1_3
   - first:
-      213: 581810672603145227
-    second: pig_side_idle_anim_4
+      213: -5420432976195561061
+    second: Office Tiles Test1_4
   - first:
-      213: 4078446952192779575
-    second: pig_side_idle_anim_5
+      213: -401913688051944232
+    second: Office Tiles Test1_5
   - first:
-      213: 8349944035173331493
-    second: pig_side_idle_anim_6
+      213: 8653741130788375727
+    second: Office Tiles Test1_6
   - first:
-      213: -2382035567874059244
-    second: pig_side_idle_anim_7
+      213: 474723225277162956
+    second: Office Tiles Test1_7
+  - first:
+      213: 3884953221606775716
+    second: Office Tiles Test1_8
+  - first:
+      213: 6244746719765380940
+    second: Office Tiles Test1_9
+  - first:
+      213: 5728220926390488861
+    second: Office Tiles Test1_10
+  - first:
+      213: 3818549084919458334
+    second: Office Tiles Test1_11
+  - first:
+      213: -4483681075954098990
+    second: Office Tiles Test1_12
+  - first:
+      213: -189773887273569568
+    second: Office Tiles Test1_13
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,11 +129,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pig_side_idle_anim_0
+      name: Office Tiles Test1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -125,18 +143,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbf60f47d330d7ca0800000000000000
-      internalID: -6017649964607311941
+      spriteID: 0927a6134d1fc17e0800000000000000
+      internalID: -1793292657935879536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_side_idle_anim_1
+      name: Office Tiles Test1_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -146,18 +164,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 845e741605642d140800000000000000
-      internalID: 4742930668617983304
+      spriteID: f55343cc8bb93b960800000000000000
+      internalID: 7616602612815902047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_side_idle_anim_2
+      name: Office Tiles Test1_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -167,18 +185,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccd7c95fbdc91fe30800000000000000
-      internalID: 4535578768271244748
+      spriteID: d2e1afdb014d712d0800000000000000
+      internalID: -3307942232908489171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_side_idle_anim_3
+      name: Office Tiles Test1_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -188,18 +206,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b359ac60919c2e7a0800000000000000
-      internalID: -6349291415313672901
+      spriteID: 83297ebc5e0aa1fb0800000000000000
+      internalID: -4676248354241932744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_side_idle_anim_4
+      name: Office Tiles Test1_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 0
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -209,18 +227,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b04aa0369b1031800800000000000000
-      internalID: 581810672603145227
+      spriteID: b99dc054de0c6c4b0800000000000000
+      internalID: -5420432976195561061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_side_idle_anim_5
+      name: Office Tiles Test1_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
+        x: 0
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -230,18 +248,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735a9bcf4ed899830800000000000000
-      internalID: 4078446952192779575
+      spriteID: 8d4fb4151ad1c6af0800000000000000
+      internalID: -401913688051944232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_side_idle_anim_6
+      name: Office Tiles Test1_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 32
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -251,18 +269,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 522f5ee2cd5f0e370800000000000000
-      internalID: 8349944035173331493
+      spriteID: fac04de75b3481870800000000000000
+      internalID: 8653741130788375727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pig_side_idle_anim_7
+      name: Office Tiles Test1_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
+        x: 64
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -272,8 +290,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4145586854f41fed0800000000000000
-      internalID: -2382035567874059244
+      spriteID: cc5e549124e869600800000000000000
+      internalID: 474723225277162956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office Tiles Test1_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab91e62f502ae530800000000000000
+      internalID: 3884953221606775716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office Tiles Test1_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fb6e73e0cc9a650800000000000000
+      internalID: 6244746719765380940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office Tiles Test1_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fc678459abe7f40800000000000000
+      internalID: 5728220926390488861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office Tiles Test1_11
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a640449263ef430800000000000000
+      internalID: 3818549084919458334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office Tiles Test1_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc5d9521d3c6c1c0800000000000000
+      internalID: -4483681075954098990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office Tiles Test1_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2f96da7a9cd5df0800000000000000
+      internalID: -189773887273569568
       vertices: []
       indices: 
       edges: []
