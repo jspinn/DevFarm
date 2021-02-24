@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Upgrades : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   private Transform desks;
+   private Transform deskTemplate;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   private void Fun()
+   {
+       desks = transform.Find("desks");
+       deskTemplate = desks.Find("deskTemplate");
+       deskTemplate.gameObject.SetActive(false);
+   }
 }
