@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class desk : MonoBehaviour
+//this class is  when the player is by the desk area the upgrades menu will appear
+public class deskTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Upgrades upgrades;
+    private void Trig(Collider2D collider)
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

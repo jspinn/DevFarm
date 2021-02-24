@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//create the menu (desk template) for each desk 
 public class Upgrades : MonoBehaviour
 {
    private Transform desks;
