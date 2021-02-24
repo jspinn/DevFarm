@@ -5,17 +5,8 @@ using UnityEngine.Audio;
 public class Sound 
 {
     public string name;
-
     public AudioClip clip;
-
-    [Range(0f, 1f)]
-    public float volume;
-    [Range(0f, 1f)]
-    public float pitch;
-
-    public bool loop;
-
-    // TODO(josefj1519):Make private and use a getter
+    // TODO: Move this to audiomanager and rewrite the awake function.
     [HideInInspector]
     public AudioSource source; 
 }
