@@ -13,7 +13,9 @@ public class Sound
     [Range(0f, 1f)]
     public float pitch;
 
+    public bool loop;
+
     // TODO(josefj1519):Make private and use a getter
-    [HideInspector]
+    [HideInInspector]
     public AudioSource source; 
 }
