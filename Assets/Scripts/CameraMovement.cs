@@ -8,10 +8,6 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private Transform followTransform;
     [SerializeField] private BoxCollider2D mapBounds;
 
-    [SerializeField] float smoothSpeed = 0.125f;
-    private Vector3 smoothVelocity;
-
-    [SerializeField] private Vector3 offset;
 
     private float xMin, xMax, yMin, yMax;
     private float camX, camY;
@@ -35,15 +31,13 @@ public class CameraMovement : MonoBehaviour
 
     void LateUpdate()
     {
-        camX = Mathf.Clamp(followTransform.position.x, xMin + camOrthSize, xMax - camRatio);
+        camX = Mathf.Clamp(followTransform.position.x, xMin + camRatio, xMax - camRatio);
         camY = Mathf.Clamp(followTransform.position.y, yMin + camOrthSize, yMax - camOrthSize);
 
         Vector3 targetPosition = new Vector3(camX, camY, transform.position.z);
 
 
-        Vector3 smoothPosition = Vector3.SmoothDamp(transform.position, targetPosition, ref smoothVelocity, smoothSpeed);
-
-        transform.position = smoothPosition;
+        transform.position = targetPosition;
 
     }
 }
