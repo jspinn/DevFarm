@@ -15,12 +15,12 @@ public class addsubtractmoney : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            cam.GetComponent<playerMoney>().addMoney(100);
+           // cam.GetComponent<playerMoney>().addMoney(100);
         }
 
         if (Input.GetButtonDown("Fire2"))
         {
-            cam.GetComponent<playerMoney>().subtractMoney(100);
+            // cam.GetComponent<playerMoney>().subtractMoney(100);
         }
     }
 }
