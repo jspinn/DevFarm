@@ -30,7 +30,8 @@ public class PlayerMovement : MonoBehaviour
 
         // Animations
         if (movement != Vector2.zero)
-        {
+        {  
+            FindObjectOfType<AudioManager>().Play("oink1");
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
         }
