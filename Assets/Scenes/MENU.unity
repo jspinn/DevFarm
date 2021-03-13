@@ -1057,7 +1057,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1141912613}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2007456918}
+        m_MethodName: ChangeToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Step1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1141912613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1413,6 +1424,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808460158}
   m_CullTransparentMesh: 0
+--- !u!114 &2007456918 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 232178421380100224, guid: 037e27b5a163b446ca2bbfb4e56dfc8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 232178422094759326}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903d1b6c259634bd6ac62b6fc67ae0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &232178422094759326
 PrefabInstance:
   m_ObjectHideFlags: 0
