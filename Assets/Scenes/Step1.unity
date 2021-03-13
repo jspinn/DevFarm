@@ -223,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 872, y: 520}
+  m_AnchoredPosition: {x: 611, y: 514}
   m_SizeDelta: {x: 401.86133, y: 124.370605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328828212
@@ -354,7 +354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 872, y: -513}
+  m_AnchoredPosition: {x: 611, y: -499}
   m_SizeDelta: {x: 401.86133, y: 124.370605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &349083429
@@ -409,7 +409,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MENU
+          m_StringArgument: Step2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &349083430
@@ -1011,7 +1011,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -870, y: -513}
+  m_AnchoredPosition: {x: -595, y: -499}
   m_SizeDelta: {x: 401.86133, y: 124.370605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340249654
