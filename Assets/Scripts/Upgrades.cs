@@ -14,4 +14,9 @@ public class Upgrades : MonoBehaviour
        deskTemplate = desks.Find("deskTemplate");
        deskTemplate.gameObject.SetActive(false);
    }
+
+    private void DeskButton(Sprite deskSprite, string DeskType, int deskCost){
+        
+    }
+
 }

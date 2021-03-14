@@ -12,7 +12,7 @@ public class desks
        standardDesk, efficientDesk, prettyDesk
    }
 
-    public static int Cost(DeskType deskType)
+    public static int deskCost(DeskType deskType)
     {
         switch(deskType)
         {
