@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CameraTest.unity
     guid: f79bbc95d29308549a001d3f52840dcd
+  - enabled: 1
+    path: Assets/Scenes/Step2.unity
+    guid: 83fbd225e3f6c4c7abda837bbaacbc11
   m_configObjects: {}
