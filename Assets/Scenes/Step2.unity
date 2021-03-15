@@ -937,7 +937,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "OBJECTIVE\n- Become the BEST tech company!\n- Upgrade your office to increase
     productivity and income\n- Collect money from each desk every day! \n- Use Mouse
-    to click on desk to upgrade\n"
+    to click on desk to upgrade and collect \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
