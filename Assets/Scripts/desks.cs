@@ -23,6 +23,13 @@ public class desks
         }
     }
 
-   
+   public static Sprite GetSprite(DeskType deskType){
+       switch(deskType) {
+           default: 
+           case DeskType.standardDesk: return DeskCall.Instance.standardDesk;
+           case DeskType.efficientDesk: return DeskCall.Instance.efficientDesk;
+           case DeskType.prettyDesk: return DeskCall.Instance.prettyDesk;
+       }
+   }
 
 }
