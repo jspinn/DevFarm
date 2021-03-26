@@ -35,9 +35,6 @@ public class BuildManager : MonoBehaviour
     public GameObject GetDeskToBuild(DeskNode node) {
 
         int deskTypeIndex = deskBlueprint.getDeskTypeIndex(node.desk);
-        Debug.Log(deskTypeIndex);
-        Debug.Log(DeskBlueprint.deskTypes.Length);
-
 
         if (deskTypeIndex + 1 >= DeskBlueprint.deskTypes.Length) {
             return null;
