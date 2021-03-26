@@ -13,4 +13,11 @@ public class DeskBlueprint
     public GameObject[] prefabs = new GameObject[deskTypes.Length];
     public int[] costs =  new int[deskTypes.Length];
 
+    public int getDeskTypeIndex(GameObject desk) {
+        if (desk == null) {
+            return -1;
+        }
+        return Array.FindIndex(DeskBlueprint.deskTypes, d => d == desk.tag);
+    }
+
 }

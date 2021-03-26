@@ -30,34 +30,19 @@ public class BuildManager : MonoBehaviour
     }
 
     public GameObject GetDeskToBuild(DeskNode node) {
-        if (node.desk == null) {
-            return deskBlueprint.prefabs[0];
+
+        int deskTypeIndex = deskBlueprint.getDeskTypeIndex(node.desk);
+        Debug.Log(deskTypeIndex);
+        Debug.Log(DeskBlueprint.deskTypes.Length);
+
+
+        if (deskTypeIndex + 1 >= DeskBlueprint.deskTypes.Length) {
+            return null;
         }
 
-        else {
-            int deskTypeIndex = Array.FindIndex(DeskBlueprint.deskTypes, d => d == node.desk.tag);
-            if (deskTypeIndex + 1 >= DeskBlueprint.deskTypes.Length) {
-                return null;
-            }
-            return deskBlueprint.prefabs[deskTypeIndex + 1];
-        }
-
+        return deskBlueprint.prefabs[deskTypeIndex + 1];
     }
 
-    public void BuildDesk(DeskNode node) {
-        GameObject deskToBuild = GetDeskToBuild(node);
-
-        if (deskToBuild == null) {
-            Debug.LogError("Max upgrade already bought.");
-            return;
-        }
-
-        if (node.desk != null) {
-            Destroy(node.desk);
-        }
-        GameObject desk = (GameObject)Instantiate(GetDeskToBuild(node), node.GetBuildPosition(), transform.rotation);
-        node.desk = desk;
-    }
     
     public void SelectNode(DeskNode node) {
         selectedNode = node;

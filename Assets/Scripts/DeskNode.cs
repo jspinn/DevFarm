@@ -41,7 +41,6 @@ public class DeskNode : MonoBehaviour
         render.color = clickColor;
 
         buildManager.SelectNode(this);
-        buildManager.BuildDesk(this);
         
    }
 
@@ -51,5 +50,20 @@ public class DeskNode : MonoBehaviour
 
    public Vector3 GetBuildPosition() {
        return transform.position + positionOffset;
+   }
+
+   public void BuildDesk() {
+        GameObject deskToBuild = buildManager.GetDeskToBuild(this);
+
+        if (deskToBuild == null) {
+            Debug.LogError("Max upgrade already bought.");
+            return;
+        }
+
+        if (desk != null) {
+            Destroy(desk);
+        }
+        GameObject newDesk = (GameObject)Instantiate(buildManager.GetDeskToBuild(this), GetBuildPosition(), transform.rotation);
+        desk = newDesk;
    }
 }
