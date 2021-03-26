@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - StandardDesk
+  - PrettyDesk
+  - EfficientDesk
   layers:
   - Default
   - TransparentFX
@@ -46,4 +49,7 @@ TagManager:
     locked: 0
   - name: Desks
     uniqueID: 1671686205
+    locked: 0
+  - name: UI
+    uniqueID: 18281193
     locked: 0

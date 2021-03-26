@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 
+
 public class DeskNode : MonoBehaviour
 {
 
     [SerializeField] private Color hoverColor;
     [SerializeField] private Color clickColor;
     [SerializeField] private Vector3 positionOffset;
-    [SerializeField] private GameObject buildMenu;
 
     // which desk is on this node
     public GameObject desk;
@@ -14,6 +14,8 @@ public class DeskNode : MonoBehaviour
     private SpriteRenderer render;
     private Color defaultColor;
     private BuildManager buildManager;
+
+    private bool mouseHover;
 
     void Start() {
         render = GetComponent<SpriteRenderer>();
@@ -24,24 +26,23 @@ public class DeskNode : MonoBehaviour
     
 
    void OnMouseEnter() {
-        Debug.Log("Mouse Enter");
         render.color = hoverColor;
+        buildManager.mouseHover = true;
+
    }
 
    void OnMouseExit() {
-        Debug.Log("Mouse Exit");
         render.color = defaultColor;
+
+        buildManager.mouseHover = false;
    }
 
    void OnMouseDown() {
         render.color = clickColor;
 
-        if (desk != null) {
-            // upgrade
-        }
-        else {
-            buildManager.BuildDesk(this);
-        }
+        buildManager.SelectNode(this);
+        buildManager.BuildDesk(this);
+        
    }
 
    void OnMouseUp() {
