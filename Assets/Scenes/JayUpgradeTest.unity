@@ -384,7 +384,7 @@ PrefabInstance:
     - target: {fileID: 4862231938106415578, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4862231938106415578, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
@@ -439,7 +439,7 @@ PrefabInstance:
     - target: {fileID: 5152918995568498275, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
       propertyPath: m_Name
-      value: DeskNode (2)
+      value: DeskNode (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26572a3018b7e654b91ec286add4085c, type: 3}
@@ -709,11 +709,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6216303838769709260}
-  - {fileID: 1026531860}
-  - {fileID: 1546855838}
-  - {fileID: 1980471742}
   - {fileID: 394853058}
   - {fileID: 2075307954}
+  - {fileID: 1980471742}
+  - {fileID: 1546855838}
+  - {fileID: 1026531860}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1047,7 +1047,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996976310
 GameObject:
@@ -1105,7 +1105,7 @@ PrefabInstance:
     - target: {fileID: 4862231938106415578, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4862231938106415578, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
@@ -2493,7 +2493,7 @@ Transform:
   - {fileID: 434607176}
   - {fileID: 1750065184}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1485645941
 GameObject:
@@ -2547,7 +2547,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1546855837
 PrefabInstance:
@@ -2559,7 +2559,7 @@ PrefabInstance:
     - target: {fileID: 4862231938106415578, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4862231938106415578, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
@@ -4646,7 +4646,7 @@ PrefabInstance:
     - target: {fileID: 4862231938106415578, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4862231938106415578, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
@@ -4701,7 +4701,7 @@ PrefabInstance:
     - target: {fileID: 5152918995568498275, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
       propertyPath: m_Name
-      value: DeskNode (1)
+      value: DeskNode (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26572a3018b7e654b91ec286add4085c, type: 3}
@@ -5114,7 +5114,7 @@ PrefabInstance:
     - target: {fileID: 5152918995568498275, guid: 26572a3018b7e654b91ec286add4085c,
         type: 3}
       propertyPath: m_Name
-      value: DeskNode
+      value: DeskNode (0)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26572a3018b7e654b91ec286add4085c, type: 3}
@@ -5139,7 +5139,7 @@ PrefabInstance:
     - target: {fileID: 7645572145673900587, guid: eb60952ebde4d2f499c9aca4f603c3d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7645572145673900587, guid: eb60952ebde4d2f499c9aca4f603c3d0,
         type: 3}
