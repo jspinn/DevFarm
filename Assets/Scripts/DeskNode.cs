@@ -10,6 +10,8 @@ public class DeskNode : MonoBehaviour
 
     // which desk is on this node
     public GameObject desk;
+    // Which dev is on this node
+    public GameObject dev;
 
     private SpriteRenderer render;
     private Color defaultColor;
@@ -65,5 +67,18 @@ public class DeskNode : MonoBehaviour
         }
         GameObject newDesk = (GameObject)Instantiate(buildManager.GetDeskToBuild(this), GetBuildPosition(), transform.rotation);
         desk = newDesk;
+   }
+
+   public void HireDev() {
+        if (dev != null) {
+            Debug.LogError("Dev already hired.");
+        }
+
+        if (desk == null) {
+            Debug.LogError("Desk needed to hire Dev.");
+        }
+
+        GameObject newDev = (GameObject)Instantiate(buildManager.GetDevToHire(), GetBuildPosition(), transform.rotation);
+        dev = newDev;
    }
 }
