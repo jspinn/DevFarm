@@ -26,6 +26,7 @@ public class NodeUI : MonoBehaviour
         target = t;
         transform.position = target.GetBuildPosition();
         deskCanvas.SetActive(true);
+        devCanvas.SetActive(false);
 
         int currDeskTypeIndex = buildManager.deskBlueprint.getDeskTypeIndex(target.desk);
 
