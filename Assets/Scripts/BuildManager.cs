@@ -12,6 +12,9 @@ public class BuildManager : MonoBehaviour
     public DeskBlueprint deskBlueprint;
     [SerializeField] private NodeUI nodeUI;
 
+    [SerializeField] private GameObject devPrefab;
+    public int devHireCost;
+
     void Awake() {
         if (instance != null) {
             Debug.LogError("More than one BuildManager in scene.");
@@ -32,15 +35,17 @@ public class BuildManager : MonoBehaviour
     public GameObject GetDeskToBuild(DeskNode node) {
 
         int deskTypeIndex = deskBlueprint.getDeskTypeIndex(node.desk);
-        Debug.Log(deskTypeIndex);
-        Debug.Log(DeskBlueprint.deskTypes.Length);
-
 
         if (deskTypeIndex + 1 >= DeskBlueprint.deskTypes.Length) {
             return null;
         }
 
         return deskBlueprint.prefabs[deskTypeIndex + 1];
+    }
+
+    public GameObject GetDevToHire() {
+        // Can replace this to implement dev upgrades (just like desk upgrades)
+        return devPrefab;
     }
 
     
