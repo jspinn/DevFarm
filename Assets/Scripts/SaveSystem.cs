@@ -1,32 +1,33 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    public static void SavePlayer()
+    public static void SaveData(List<DeskNode> deskNodes)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.save";
+        string path = Application.persistentDataPath + "/data.save";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        // PlayerData data = new PlayerData();
+        GameData data = new GameData(deskNodes);
 
-        // formatter.Serialize(stream, data);
+        formatter.Serialize(stream, data);
 
         stream.Close();
     }
 
-    public static PlayerData LoadPlayer()
+    public static GameData LoadData()
     {
-        string path = Application.persistentDataPath + "/player.save";
+        string path = Application.persistentDataPath + "/data.save";
 
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);
 
-            PlayerData data = formatter.Deserialize(stream) as PlayerData;
+            GameData data = formatter.Deserialize(stream) as GameData;
             stream.Close();
 
             return data;

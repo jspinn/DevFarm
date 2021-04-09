@@ -43,6 +43,14 @@ public class BuildManager : MonoBehaviour
         return deskBlueprint.prefabs[deskTypeIndex + 1];
     }
 
+    public GameObject GetDeskToLoad(int deskTypeIndex) {
+        if (deskTypeIndex > -1) {
+            return deskBlueprint.prefabs[deskTypeIndex];
+        }
+        
+        return null;
+    }
+
     public GameObject GetDevToHire() {
         // Can replace this to implement dev upgrades (just like desk upgrades)
         return devPrefab;
