@@ -58,18 +58,13 @@ public class TimeUtil
             return TimeSpan.Zero;
         }
         TimeSpan time = sw_.Elapsed;
-        if (time < time_)
-        {
-            UnityEngine.Debug.LogWarning("Stopwatch hasn't reached the specified time yet! Time is currently: " + time.ToString());
-            return TimeSpan.Zero;
-        }
         day++;
         sw_.Stop();
         sw_.Reset();
         return time;
     }
 
-    // Returns time in type Timespan and resets stopwatch.  
+    // Returns time in type Timespan  
     public TimeSpan GetStopWatchTimeSpan()
     {
         if (!sw_.IsRunning)
