@@ -24,6 +24,7 @@ public class playerMoney : MonoBehaviour
     public void addMoney(int moneyToAdd)
     {
         money += moneyToAdd;
+        moneyText.text= money.ToString();
 
     }
 
@@ -36,6 +37,8 @@ public class playerMoney : MonoBehaviour
         else
         {
             money -= moneyToSubtract;
+            moneyText.text= money.ToString();
+
         }
 
     }
