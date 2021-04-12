@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
+using TMPro;
+
 // TimeManager tm = GameObject.FindGameObjectWithTag("Tagtm").GetComponent<TimeManager>();
 /*
         if(tm.isDayOver()){
@@ -10,7 +13,7 @@ using System;
 */
 public class TimeManager : MonoBehaviour
 {
-    private readonly TimeSpan interval = new TimeSpan(0,0, 0, 18,0);
+    private readonly TimeSpan interval = new TimeSpan(0,0, 0, 3,0);
     private TimeSpan prevtime;
     private string time;
     private TimeUtil instance;
@@ -18,6 +21,8 @@ public class TimeManager : MonoBehaviour
 
     private int counter = 0; 
     private int countmax; 
+
+    public TextMeshProUGUI timeText;
 
     private readonly string NIGHTTIME_STR = "NIGHTTIME";
 
@@ -39,11 +44,15 @@ public class TimeManager : MonoBehaviour
         prevtime = new TimeSpan();
         countmax = times.Length;
         time = NIGHTTIME_STR;
+        timeText.text=string.Format("{0}", time);
+        StartNewDay();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        UnityEngine.Debug.LogWarning(time);
         if(!nighttime){
             TimeSpan currtime = new TimeSpan();
             currtime = instance.GetStopWatchTimeSpan();
@@ -59,6 +68,7 @@ public class TimeManager : MonoBehaviour
                 }
                 if( counter < countmax){
                     time = times[counter];
+                    timeText.text=string.Format("{0}", time);
                 }
             }
         }     
@@ -73,6 +83,8 @@ public class TimeManager : MonoBehaviour
         return nighttime;
     }
     public string getCurrentTime(){
+        
+      //  UnityEngine.Debug.LogWarning(time);
         return time;
     }
 
@@ -86,4 +98,9 @@ public class TimeManager : MonoBehaviour
     public int getDays(){
         return instance.getDays();
     }
+
+    // public void DisplayTime(){
+    //     time=getCurrentTime();
+    //     timeText.text=string.Format("{0}", time);
+    // }
 }
