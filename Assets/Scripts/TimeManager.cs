@@ -44,13 +44,15 @@ public class TimeManager : MonoBehaviour
         prevtime = new TimeSpan();
         countmax = times.Length;
         time = NIGHTTIME_STR;
-        timeText.text=string.Format("{0}", times);
+        timeText.text=string.Format("{0}", time);
+        StartNewDay();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        UnityEngine.Debug.LogWarning(time);
         if(!nighttime){
             TimeSpan currtime = new TimeSpan();
             currtime = instance.GetStopWatchTimeSpan();
@@ -66,7 +68,7 @@ public class TimeManager : MonoBehaviour
                 }
                 if( counter < countmax){
                     time = times[counter];
-                    
+                    timeText.text=string.Format("{0}", time);
                 }
             }
         }     
