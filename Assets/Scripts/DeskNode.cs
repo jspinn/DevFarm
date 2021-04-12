@@ -69,6 +69,13 @@ public class DeskNode : MonoBehaviour
         desk = newDesk;
    }
 
+   public void LoadDesk(int deskTypeIndex) {
+        if (deskTypeIndex != -1) {
+            GameObject newDesk = (GameObject)Instantiate(buildManager.GetDeskToLoad(deskTypeIndex), GetBuildPosition(), transform.rotation);
+            desk = newDesk;
+        }
+   }
+
    public void HireDev() {
         if (dev != null) {
             Debug.LogError("Dev already hired.");
@@ -80,5 +87,17 @@ public class DeskNode : MonoBehaviour
 
         GameObject newDev = (GameObject)Instantiate(buildManager.GetDevToHire(), GetBuildPosition(), transform.rotation);
         dev = newDev;
+   }
+
+   public void LoadDev(int devTypeIndex) {
+        if (devTypeIndex != -1) {
+            GameObject newDev = (GameObject)Instantiate(buildManager.GetDevToHire(), GetBuildPosition(), transform.rotation);
+            dev = newDev;
+       }
+
+   }
+
+   public int getDeskTypeIndex () {
+       return buildManager.deskBlueprint.getDeskTypeIndex(desk);
    }
 }
