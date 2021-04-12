@@ -13,7 +13,7 @@ using TMPro;
 */
 public class TimeManager : MonoBehaviour
 {
-    private readonly TimeSpan interval = new TimeSpan(0,0, 0, 18,0);
+    private readonly TimeSpan interval = new TimeSpan(0,0, 0, 3,0);
     private TimeSpan prevtime;
     private string time;
     private TimeUtil instance;
@@ -44,6 +44,8 @@ public class TimeManager : MonoBehaviour
         prevtime = new TimeSpan();
         countmax = times.Length;
         time = NIGHTTIME_STR;
+        timeText.text=string.Format("{0}", times);
+
     }
 
     // Update is called once per frame
@@ -64,6 +66,7 @@ public class TimeManager : MonoBehaviour
                 }
                 if( counter < countmax){
                     time = times[counter];
+                    
                 }
             }
         }     
@@ -78,8 +81,8 @@ public class TimeManager : MonoBehaviour
         return nighttime;
     }
     public string getCurrentTime(){
-        time="00:00";
-        timeText.text=time;
+        
+      //  UnityEngine.Debug.LogWarning(time);
         return time;
     }
 
@@ -93,4 +96,9 @@ public class TimeManager : MonoBehaviour
     public int getDays(){
         return instance.getDays();
     }
+
+    // public void DisplayTime(){
+    //     time=getCurrentTime();
+    //     timeText.text=string.Format("{0}", time);
+    // }
 }
