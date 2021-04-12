@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
+using TMPro;
+
 // TimeManager tm = GameObject.FindGameObjectWithTag("Tagtm").GetComponent<TimeManager>();
 /*
         if(tm.isDayOver()){
@@ -18,6 +21,8 @@ public class TimeManager : MonoBehaviour
 
     private int counter = 0; 
     private int countmax; 
+
+    public TextMeshProUGUI timeText;
 
     private readonly string NIGHTTIME_STR = "NIGHTTIME";
 
@@ -73,6 +78,8 @@ public class TimeManager : MonoBehaviour
         return nighttime;
     }
     public string getCurrentTime(){
+        time="00:00";
+        timeText.text=time;
         return time;
     }
 

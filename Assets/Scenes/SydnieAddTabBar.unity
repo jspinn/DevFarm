@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 263779721}
   - component: {fileID: 263779720}
   - component: {fileID: 263779724}
+  - component: {fileID: 263779725}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -234,6 +235,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   money: 0
   moneyText: {fileID: 1172402017}
+--- !u!114 &263779725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263779719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1a8f83e0724bd47aefe3fc5ad7fb4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 1701909678}
 --- !u!1 &351318224
 GameObject:
   m_ObjectHideFlags: 0
