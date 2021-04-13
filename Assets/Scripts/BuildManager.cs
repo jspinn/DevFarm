@@ -44,6 +44,8 @@ public class BuildManager : MonoBehaviour
         if (deskTypeIndex > -1) {
             return deskBlueprint.prefabs[deskTypeIndex];
         }
+
+        Debug.Log(deskTypeIndex);
         
         return null;
     }

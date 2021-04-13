@@ -52,7 +52,6 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UnityEngine.Debug.LogWarning(time);
         if(!nighttime){
             TimeSpan currtime = new TimeSpan();
             currtime = instance.GetStopWatchTimeSpan();
