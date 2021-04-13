@@ -29,9 +29,6 @@ public class BuildManager : MonoBehaviour
         }
     }
 
-    void Start() {
-    }
-
     public GameObject GetDeskToBuild(DeskNode node) {
 
         int deskTypeIndex = deskBlueprint.getDeskTypeIndex(node.desk);

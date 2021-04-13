@@ -9,6 +9,13 @@ public class ChangeScene : MonoBehaviour
     // Ex. Clicking How To Play will go into a tutorial of how to play the game
     public void ChangeToScene(string SceneToChangeTo)
     {
+        GlobalControl.Instance.loadGame = false;
+        SceneManager.LoadScene(SceneToChangeTo);
+    }
+
+    public void LoadGameScene(string SceneToChangeTo)
+    {
+        GlobalControl.Instance.loadGame = true;
         SceneManager.LoadScene(SceneToChangeTo);
     }
 }
