@@ -29,9 +29,6 @@ public class BuildManager : MonoBehaviour
         }
     }
 
-    void Start() {
-    }
-
     public GameObject GetDeskToBuild(DeskNode node) {
 
         int deskTypeIndex = deskBlueprint.getDeskTypeIndex(node.desk);
@@ -47,6 +44,8 @@ public class BuildManager : MonoBehaviour
         if (deskTypeIndex > -1) {
             return deskBlueprint.prefabs[deskTypeIndex];
         }
+
+        Debug.Log(deskTypeIndex);
         
         return null;
     }

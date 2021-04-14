@@ -17,7 +17,6 @@ public class GameData
 
         foreach (DeskNode node in deskNodes) {
             // Desk level type
-            Debug.Log(node.tag);
             deskNodeDeskTypes.Add(node.getDeskTypeIndex());
 
             // Dev hired or not (Can be changed to dev type if dev upgrades added)

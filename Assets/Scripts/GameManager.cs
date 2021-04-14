@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class GameManager : MonoBehaviour
 
     void Start() {
         buildManager = BuildManager.instance;
+        if (GlobalControl.Instance.loadGame) {
+            LoadGame();
+        }
     }
 
     public void SaveGame() {
@@ -17,7 +21,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game saved");
     }
 
-    public void LoadData() {
+    public void LoadGame() {
         GameData data = SaveSystem.LoadData();
 
         for (int i = 0; i < deskNodes.Count; i++) {
@@ -26,5 +30,15 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("Game loaded");
+    }
+
+    public void ChangeToScene(string SceneToChangeTo)
+    {
+        SceneManager.LoadScene(SceneToChangeTo);
+    }
+
+    public void LoadSaveScene(string SceneToChangeTo) {
+        SceneManager.LoadScene(SceneToChangeTo);
+        LoadGame();
     }
 }
