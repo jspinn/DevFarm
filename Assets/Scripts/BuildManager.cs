@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
 
@@ -44,9 +44,8 @@ public class BuildManager : MonoBehaviour
         if (deskTypeIndex > -1) {
             return deskBlueprint.prefabs[deskTypeIndex];
         }
-
-        Debug.Log(deskTypeIndex);
         
+        Debug.LogError("Desk Type to load not found");
         return null;
     }
 
