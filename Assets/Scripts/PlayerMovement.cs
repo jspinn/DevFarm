@@ -47,4 +47,18 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
         
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+       if (collision.tag == "icon")
+       {
+        Destroy(collision.gameObject);
+
+       }
+    }
+
+
+
 }

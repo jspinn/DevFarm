@@ -25,6 +25,10 @@ public class DeskNode : MonoBehaviour
         buildManager = BuildManager.instance;
         
     }
+
+    void Awake() {
+        buildManager = BuildManager.instance;
+    }
     
 
    void OnMouseEnter() {

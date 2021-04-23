@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using System;
 
@@ -29,9 +29,6 @@ public class BuildManager : MonoBehaviour
         }
     }
 
-    void Start() {
-    }
-
     public GameObject GetDeskToBuild(DeskNode node) {
 
         int deskTypeIndex = deskBlueprint.getDeskTypeIndex(node.desk);
@@ -48,6 +45,7 @@ public class BuildManager : MonoBehaviour
             return deskBlueprint.prefabs[deskTypeIndex];
         }
         
+        Debug.LogError("Desk Type to load not found");
         return null;
     }
 

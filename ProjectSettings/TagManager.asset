@@ -8,6 +8,7 @@ TagManager:
   - StandardDesk
   - PrettyDesk
   - EfficientDesk
+  - icon
   layers:
   - Default
   - TransparentFX
