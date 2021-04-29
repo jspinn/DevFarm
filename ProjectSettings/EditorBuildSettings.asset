@@ -20,13 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Office.unity
     guid: 489349900a7e0cf4982603c8431689db
-  - enabled: 1
-    path: Assets/Scenes/Step1inOffice.unity
-    guid: 57ec67e1b0ed6414686f6c0244a2dfa3
-  - enabled: 1
-    path: Assets/Scenes/Step2inOffice.unity
-    guid: cbea65d64449743f1a050b2a92fb9366
-  - enabled: 1
-    path: Assets/Scenes/Step3inOffice.unity
-    guid: 9e08d43b9625949809fb76666ebcb617
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
