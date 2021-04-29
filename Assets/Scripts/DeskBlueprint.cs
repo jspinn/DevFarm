@@ -13,6 +13,8 @@ public class DeskBlueprint
     public GameObject[] prefabs = new GameObject[deskTypes.Length];
     public int[] costs =  new int[deskTypes.Length];
 
+    public float[] timeToMakeMoney = new float[deskTypes.Length];
+
     public int getDeskTypeIndex(GameObject desk) {
         if (desk == null) {
             return -1;

@@ -13,7 +13,11 @@ public class BuildManager : MonoBehaviour
     [SerializeField] private NodeUI nodeUI;
 
     [SerializeField] private GameObject devPrefab;
+
     public int devHireCost;
+
+    [SerializeField] private GameObject player;
+    public PlayerStats playerStats;
 
     void Awake() {
         if (instance != null) {
@@ -21,6 +25,10 @@ public class BuildManager : MonoBehaviour
         }
 
         instance = this;
+    }
+
+    void Start() {
+        playerStats = player.GetComponent<PlayerStats>();
     }
 
     void Update() {

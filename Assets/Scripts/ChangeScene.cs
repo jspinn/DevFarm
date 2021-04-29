@@ -18,4 +18,9 @@ public class ChangeScene : MonoBehaviour
         GlobalControl.Instance.loadGame = true;
         SceneManager.LoadScene(SceneToChangeTo);
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
