@@ -3893,6 +3893,7 @@ MonoBehaviour:
   buildCostText: {fileID: 580640542}
   buildButton: {fileID: 1885977299}
   hireDevCostText: {fileID: 924104211}
+  hireButton: {fileID: 2135999560}
 --- !u!4 &1133957200
 Transform:
   m_ObjectHideFlags: 0
@@ -4503,13 +4504,15 @@ MonoBehaviour:
     - {fileID: 786267378179491016, guid: d50467d4504639a41bb446c07c409a48, type: 3}
     costs: 64000000f4010000e8030000
     timeToMakeMoney:
-    - 60
-    - 30
+    - 12
     - 10
+    - 8
   nodeUI: {fileID: 1133957199}
   devPrefab: {fileID: 4752110691267552487, guid: be546bccbcf4bae47a865ec60c3b094a,
     type: 3}
-  devHireCost: 10000
+  devHireCost: 1000
+  player: {fileID: 1775759354}
+  playerStats: {fileID: 0}
 --- !u!4 &1485645943
 Transform:
   m_ObjectHideFlags: 0
@@ -4544,6 +4547,7 @@ MonoBehaviour:
   - {fileID: 1885275467}
   - {fileID: 1559088725}
   player: {fileID: 1775759354}
+  startingMoney: 5000
 --- !u!114 &1485645945
 MonoBehaviour:
   m_ObjectHideFlags: 0

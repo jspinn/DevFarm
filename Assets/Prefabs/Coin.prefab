@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentObject: 0
-  pickupQuantity: 50
+  pickupQuantity: 20
 --- !u!61 &6225959579919535676
 BoxCollider2D:
   m_ObjectHideFlags: 0

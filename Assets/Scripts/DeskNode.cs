@@ -66,11 +66,19 @@ public class DeskNode : MonoBehaviour
             return;
         }
 
+        int deskCost = buildManager.deskBlueprint.costs[buildManager.deskBlueprint.getDeskTypeIndex(deskToBuild)];
+
+        if (buildManager.playerStats.coins < deskCost) {
+            Debug.LogError("Insufficient money to build");
+            return;
+        }
+
         if (desk != null) {
             Destroy(desk);
         }
         GameObject newDesk = (GameObject)Instantiate(buildManager.GetDeskToBuild(this), GetBuildPosition(), transform.rotation);
         desk = newDesk;
+        buildManager.playerStats.RemoveCoins(deskCost);
    }
 
    public void LoadDesk(int deskTypeIndex) {
@@ -88,6 +96,12 @@ public class DeskNode : MonoBehaviour
         if (desk == null) {
             Debug.LogError("Desk needed to hire Dev.");
         }
+
+        if (buildManager.playerStats.coins < buildManager.devHireCost) {
+            Debug.LogError("Insufficient money to hire");
+        }
+
+        buildManager.playerStats.RemoveCoins(buildManager.devHireCost);
 
         GameObject newDev = (GameObject)Instantiate(buildManager.GetDevToHire(), GetBuildPosition(), transform.rotation);
         dev = newDev;

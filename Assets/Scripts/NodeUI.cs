@@ -16,6 +16,8 @@ public class NodeUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI hireDevCostText;
 
+    [SerializeField] private Button hireButton;
+
     void Start() {
         buildManager = BuildManager.instance;
     }
@@ -39,7 +41,12 @@ public class NodeUI : MonoBehaviour
         else {
             // Get build cost from BuildManager cost field
             int buildCost = buildManager.deskBlueprint.costs[currDeskTypeIndex + 1];
-            buildButton.interactable = true;
+            if (buildCost <= buildManager.playerStats.coins) {
+                buildButton.interactable = true;
+            }
+            else {
+                buildButton.interactable = false;
+            }
 
             // No desk built yet
             if (currDeskTypeIndex < 0) {
@@ -58,6 +65,13 @@ public class NodeUI : MonoBehaviour
         if (t.dev == null && t.desk != null) {
             devCanvas.SetActive(true);
             hireDevCostText.SetText("$" + buildManager.devHireCost);
+
+            if (buildManager.devHireCost <= buildManager.playerStats.coins) {
+                hireButton.interactable = true;
+            }
+            else {
+                hireButton.interactable = false;
+            }
         }
         
     }
@@ -76,6 +90,7 @@ public class NodeUI : MonoBehaviour
     public void Hire() {
         target.HireDev();
         devCanvas.SetActive(false);
+        buildManager.SelectNode(target);
     }
 
 
