@@ -6,7 +6,7 @@ public class MoneySpawner : MonoBehaviour
 {
 
     [SerializeField] private GameObject coin;
-    [SerializeField] private float spawnDelay;
+    [SerializeField] private float spawnDelay = 60;
     [SerializeField] private Vector3 offset;
 
     // Start is called before the first frame update

@@ -99,6 +99,8 @@ public class DeskNode : MonoBehaviour
         if (devTypeIndex != -1) {
             GameObject newDev = (GameObject)Instantiate(buildManager.GetDevToHire(), GetBuildPosition(), transform.rotation);
             dev = newDev;
+            MoneySpawner spawner = dev.GetComponent<MoneySpawner>();
+            spawner.SetDelay(buildManager.deskBlueprint.timeToMakeMoney[getDeskTypeIndex()]);
        }
 
    }

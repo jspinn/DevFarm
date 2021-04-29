@@ -9,8 +9,9 @@ public class GameData
     
     public List<int> deskNodeDeskTypes;
     public List<int> devs;
+    public int coins;
 
-    public GameData (List<DeskNode> deskNodes)
+    public GameData (List<DeskNode> deskNodes, PlayerStats playerStats)
     {
         deskNodeDeskTypes = new List<int>();
         devs = new List<int>();
@@ -27,6 +28,8 @@ public class GameData
                 devs.Add(-1);
             }
         }
+
+        coins = playerStats.coins;
     }
 
 }

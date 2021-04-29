@@ -111,6 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbdcc494814bd10438865b03f6fa6d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 1975290719438697506, guid: 99194f89392eee74a81d2c3541c0dca6, type: 3}
+  coin: {fileID: 6225959579919535667, guid: 618fb6eec7bb28246ac6c67b7443a62a, type: 3}
   spawnDelay: 0
   offset: {x: 0, y: -1.5, z: 0}

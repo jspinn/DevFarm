@@ -7,16 +7,20 @@ public class GameManager : MonoBehaviour
 {
     private BuildManager buildManager;
     [SerializeField] private List<DeskNode> deskNodes;
+    [SerializeField] private GameObject player;
+
+    private PlayerStats playerStats;
 
     void Start() {
         buildManager = BuildManager.instance;
+        playerStats = player.GetComponent<PlayerStats>();
         if (GlobalControl.Instance.loadGame) {
             LoadGame();
         }
     }
 
     public void SaveGame() {
-        SaveSystem.SaveData(deskNodes);
+        SaveSystem.SaveData(deskNodes, playerStats);
 
         Debug.Log("Game saved");
     }
@@ -28,6 +32,8 @@ public class GameManager : MonoBehaviour
             deskNodes[i].LoadDesk(data.deskNodeDeskTypes[i]);
             deskNodes[i].LoadDev(data.devs[i]);
         }
+
+        playerStats.AddCoins(data.coins);
 
         Debug.Log("Game loaded");
     }

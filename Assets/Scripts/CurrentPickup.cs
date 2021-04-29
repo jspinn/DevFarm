@@ -9,19 +9,20 @@ public class CurrentPickup : MonoBehaviour
     public PickupObject currentObject;
     public int pickupQuantity;
 
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "Player")
         {
+            PlayerStats playerStats = other.gameObject.GetComponent<PlayerStats>();
+
             if (currentObject == PickupObject.COIN)
             {
-                PlayerStats.playerstats.coins += pickupQuantity;
-                Debug.Log(PlayerStats.playerstats.coins);
+                playerStats.AddCoins(pickupQuantity);
             }
             else if (currentObject == PickupObject.GEM)
             {
-                PlayerStats.playerstats.gems += pickupQuantity;
-                Debug.Log(PlayerStats.playerstats.gems);
+                playerStats.gems += pickupQuantity;
             }
             Destroy(gameObject);
         }
