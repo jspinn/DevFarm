@@ -32,6 +32,7 @@ public class DeskNode : MonoBehaviour
     
 
    void OnMouseEnter() {
+        FindObjectOfType<AudioManager>().Play("menu_click");
         render.color = hoverColor;
         buildManager.mouseHover = true;
 
@@ -45,7 +46,6 @@ public class DeskNode : MonoBehaviour
 
    void OnMouseDown() {
         render.color = clickColor;
-
         buildManager.SelectNode(this);
         
    }
@@ -59,6 +59,7 @@ public class DeskNode : MonoBehaviour
    }
 
    public void BuildDesk() {
+        FindObjectOfType<AudioManager>().Play("money");
         GameObject deskToBuild = buildManager.GetDeskToBuild(this);
 
         if (deskToBuild == null) {
@@ -100,7 +101,7 @@ public class DeskNode : MonoBehaviour
         if (buildManager.playerStats.coins < buildManager.devHireCost) {
             Debug.LogError("Insufficient money to hire");
         }
-
+        FindObjectOfType<AudioManager>().Play("money");
         buildManager.playerStats.RemoveCoins(buildManager.devHireCost);
 
         GameObject newDev = (GameObject)Instantiate(buildManager.GetDevToHire(), GetBuildPosition(), transform.rotation);

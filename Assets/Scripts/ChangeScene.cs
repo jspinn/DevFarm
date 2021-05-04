@@ -9,6 +9,7 @@ public class ChangeScene : MonoBehaviour
     // Ex. Clicking How To Play will go into a tutorial of how to play the game
     public void ChangeToScene(string SceneToChangeTo)
     {
+        FindObjectOfType<AudioManager>().Play("menu_click");
         GlobalControl.Instance.loadGame = false;
         SceneManager.LoadScene(SceneToChangeTo);
     }
