@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
+        FindObjectOfType<AudioManager>().Play("ambient");
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
 

@@ -648,6 +648,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575271090}
   m_CullTransparentMesh: 0
+--- !u!1 &693771610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693771612}
+  - component: {fileID: 693771611}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &693771611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693771610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16aefafa01d3aa44c9f04aee0468ce57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: ambient
+    clip: {fileID: 8300000, guid: fef76f2e9b9fe2c46b24dc0605bc16c2, type: 3}
+    source: {fileID: 0}
+    loop: 1
+  - name: menu_click
+    clip: {fileID: 8300000, guid: 1041c436e8c4d9c4b980a4a6ba6b9b79, type: 3}
+    source: {fileID: 0}
+    loop: 0
+  - name: money
+    clip: {fileID: 8300000, guid: 3d808434993ae334e84dc62598aedba5, type: 3}
+    source: {fileID: 0}
+    loop: 0
+  - name: oink
+    clip: {fileID: 8300000, guid: 76379abaf3acac04cb50add850d4831d, type: 3}
+    source: {fileID: 0}
+    loop: 0
+  - name: chiptune
+    clip: {fileID: 8300000, guid: 0045a76b82c788a489386389f2ce83f5, type: 3}
+    source: {fileID: 0}
+    loop: 0
+--- !u!4 &693771612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693771610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.9044755, y: 0.21583307, z: -1.8919456}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &858953300
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class PlayerStats : MonoBehaviour
     public TextMeshProUGUI moneyText;
 
     public void AddCoins(int amount) {
+        FindObjectOfType<AudioManager>().Play("oink");
         coins += amount;
         moneyText.text= coins.ToString();
     }
